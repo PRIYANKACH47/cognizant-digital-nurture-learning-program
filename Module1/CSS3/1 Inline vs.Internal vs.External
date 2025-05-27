@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Methods Demo</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* Body styles */
+    body {
+      background-color: #f0f8ff; /* Light blue background */
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Inline CSS -->
+  <h1 style="color: red;">This heading is red (Inline CSS)</h1>
+
+  <h2 class="header">This heading is styled by external CSS</h2>
+
+  <p class="text">
+    This paragraph is also styled by external CSS.
+  </p>
+
+</body>
+</html>
+/* Header styles */
+.main-heading {
+  color: navy;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+.content {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
