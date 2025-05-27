@@ -1,0 +1,24 @@
+// Array to store community events
+const communityEvents = [];
+
+// Add new events using .push()
+communityEvents.push(
+  { name: "Music Festival", category: "Music", date: "2025-09-10" },
+  { name: "Baking Workshop", category: "Workshop", date: "2025-07-22" },
+  { name: "Jazz Night", category: "Music", date: "2025-08-05" },
+  { name: "Art Exhibition", category: "Art", date: "2025-10-01" }
+);
+
+// Use .filter() to show only music events
+const musicEvents = communityEvents.filter(event => event.category === "Music");
+
+// Use .map() to format display cards (strings)
+const displayCards = communityEvents.map(event => `${event.name} on ${event.date}`);
+
+console.log("All Community Events:");
+console.log(displayCards);
+
+console.log("\nMusic Events:");
+musicEvents.forEach(event => {
+  console.log(`🎵 ${event.name} scheduled on ${event.date}`);
+});
